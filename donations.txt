@@ -1,0 +1,10 @@
+Toys,Bluey,22.50
+Clothes,Bingo,20.50
+School Supplies,Chilli,15
+Toys,Bandit,30.0
+Clothes,Bluey,11.0
+Clothes,Chilli,25.0
+Clothes,Bluey,40.00
+Bad Fund,Bluey,50.0
+Toys,,100.0
+Toys,Bingo,-40.0

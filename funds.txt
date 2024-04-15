@@ -1,0 +1,3 @@
+Toys,50.0
+Clothes,250.0
+School Supplies,100.0
