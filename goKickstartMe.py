@@ -33,11 +33,17 @@ def main():
 
 
 def get_user_choice():
-    choice = int(input("What would you like to do? "))
-    while choice < 1 or choice > 7:
+    valid = True
+    choice = input("What would you like to do? ")
+    if not(choice.isdigit()):
+        valid = False
+    while valid == False or not (1 <= int(choice) <= 7):
         print("invalid selection")
-        choice = int(input("What would you like to do? "))
-    return choice
+        choice = input("What would you like to do? ")
+        valid = True
+        if not(choice.isdigit()):
+            valid = False
+    return int(choice)
 
 def menu_1(funds):
     if len(funds) == 0:
@@ -45,7 +51,7 @@ def menu_1(funds):
     else:
         sort(funds)
         for i in range(len(funds)):
-            print(funds[i])
+            print("%d: %s" % (i+1, funds[i]))
 
 def menu_2(funds):
     # Create name list
